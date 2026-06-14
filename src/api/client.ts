@@ -54,7 +54,7 @@ apiClient.interceptors.response.use(
     }
 
     if (error.response?.status === 401 && !originalRequest._retry) {
-      const { refreshToken, clearAuth, setAuth, user } = useAuthStore.getState()
+      const { refreshToken, clearAuth, user } = useAuthStore.getState()
 
       // If no refresh token stored, immediately log out
       if (!refreshToken) {

@@ -1,10 +1,10 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest'
+import { describe, it, expect, beforeEach,} from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { useAuthStore } from '@/store/authStore'
 import { ProtectedRoute } from '@/router/ProtectedRoute'
 import { PublicOnlyRoute } from '@/router/PublicOnlyRoute'
-import React from 'react'
+
 
 // ── authStore tests ───────────────────────────────────────────────────────────
 
